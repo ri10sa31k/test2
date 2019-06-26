@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>部品関連</title>
+  <meta charset="UTF-8">
+  <link href="components_style.css" rel="stylesheet" type="text/css">
+  <link href="components_style.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+  #user-input-form {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+  }
+
+  #user-input-form input {
+    width: 20%;
+  }
+</style>
+<body>
+
+  <!-- radioボタン -->
+  <div class="form-radio">
+    <div class="box">
+      <input type="radio" id="radio1" name="kubun" />
+      <label for="radio1">家</label>
+      <input type="radio" id="radio2" name="kubun" />
+      <label for="radio2">勤務先</label>
+      <input type="radio" id="radio3" name="kubun" />
+      <label for="radio3">その他</label>
+    </div>
+  </div>
+
+
+  <!-- form例 -->
+  <form id="user-input-form">
+    
+      <ul>
+        <li><label><span>所属</span><input type="password" name="department" placeholder="営業部" /></label></li>
+        <li><label><span>連絡先</span><input type="password" name="department" placeholder="営業部" /></label></li>
+
+        <li>
+          <label><span>区分</span>
+          <span><input type="radio" id="radio1" name="kubun" /><label for="radio1">家</label></span>
+          <span><input type="radio" id="radio1" name="kubun" /><label for="radio1">家</label></span>
+      </ul>
+
+  </form>
+
+
+  <!-- dropdown menu -->
+  <div class="selectbox">
+    <select required>
+      <option value="" hidden>Choose</option>
+      <option value="1">XS</option>
+      <option value="2">S</option>
+      <option value="3">M</option>
+      <option value="4">L</option>
+    </select>
+  </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

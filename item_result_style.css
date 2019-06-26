@@ -1,0 +1,127 @@
+/*検索条件 */
+.search-condition {
+  display: flex;
+}
+
+.search-condition .item {
+  margin-left: 25px;
+}
+
+.search-result-item {
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+}
+
+
+/* テーブル */
+.container-table {
+  width: 80%;
+  /* min-height: 100vh; */
+  /* background: #C5CAE9; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+  margin-top: 70px;
+}
+
+.wrap-table {
+  width: 1170px;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+table * {
+  position: relative;
+  border: 0.5px #93909c solid;
+}
+
+table td, table th {
+  padding-left: 8px;
+  border: 0px;
+}
+
+table thead tr {
+  height: 60px;
+  background: #36304a;
+}
+
+table tbody tr {
+  height: 50px;
+}
+
+table tbody tr:last-child {
+  /* border: 0; */
+}
+
+.order-table-head th{
+  width: 1170px;
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: OpenSans-Regular;
+  font-size: 13px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+
+/* 列 */
+th .column1 {
+  padding-left: 10px;
+}
+
+td.column1 {
+  width: 5%;
+  text-align: center;
+}
+
+.column2 {
+  width: 23.75%;
+  text-align: center;
+}
+
+.column3 {
+  width: 23.75%;
+  text-align: center;
+}
+
+.column4 {
+  width: 23.75%;
+  text-align: center;
+}
+
+.column5 {
+  width: 23.75%;
+  text-align: center;
+  padding-right: 10px;
+}

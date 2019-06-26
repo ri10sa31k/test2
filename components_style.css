@@ -1,0 +1,188 @@
+span {
+  width: 14em;
+  display:inline-block;
+}
+
+  .form-field ul { /*ul要素を初期化*/
+  padding:0;
+  margin:0;
+  }
+.form-field ul li { /*li要素も初期化し、ボーダーなどを指定*/
+  list-style:none; /*リストマーカー（●）を無しに*/
+  margin:0;
+  padding:.5em;
+  border-top: 2px solid #fff;
+  font-size:15px;
+  }
+.form-field ul li:first-child { /*最初のli要素はボーダー無し*/
+  border-top:none;
+  }
+
+
+/* radioボタン*/
+.form-radio .box {
+  width: 90%;
+  margin: 2em auto;
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: #ffffff;
+  display: flex;
+}
+.form-radio input[type=radio] {
+  display: none;
+}
+.form-radio label:focus,
+.form-radio label:hover,
+.form-radio label:active,
+.form-radio input:checked + label {
+  color: #3949AB;
+}
+.form-radio label:focus:before,
+.form-radio label:hover:before,
+.form-radio label:active:before,
+.form-radio input:checked + label:before {
+  border-color: #3949AB;
+  background: #ffffff;
+}
+.form-radio label {
+  font-size: 1em;
+  line-height: 1;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 1em 1em 1em 3em;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease;
+          transition: all 0.15s ease;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: #ffffff;
+  padding-bottom: 8px;
+}
+.form-radio label:before {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border: 0.1em solid #cccccc;
+  border-radius: 50%;
+}
+.form-radio input:checked + label:before {
+  border-color: #3949AB;
+  background: #3949AB;
+}
+.form-radio input:disabled + label {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.5);
+  background: #efefef;
+}
+.form-radio input:disabled + label:hover {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.form-radio input:disabled + label:before {
+  border-color: #ffffff;
+  background: #ffffff;
+}
+
+
+/*フォーム */
+.form-field {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  position: relative;
+}
+
+input, textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2C3E50;
+  font-size: 13px;
+}
+
+
+/* セレクトボックス */
+.selectbox {
+  overflow: hidden;
+  width: 15%;
+  margin: 2em auto;
+  text-align: center;
+}
+.selectbox select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 15px;
+}
+.selectbox select::-ms-expand {
+    display: none;
+}
+.selectbox {
+  position: relative;
+  border: 1px solid #bbbbbb;
+  border-radius: 2px;
+  background: #ffffff;
+}
+.selectbox::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666666;
+  pointer-events: none;
+}
+.selectbox select {
+  padding: 8px 38px 8px 8px;
+  color: #666666;
+}
+
+
+/* フォームボタン */
+.form-button {
+  width: 100px;
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+#login-form .form-button:hover, #login-form .form-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+.form-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
